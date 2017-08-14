@@ -9,5 +9,5 @@ gem 'rake'
 
 group :test do
   gem 'rspec'
-  gem 'html-proofer', '~> 3.0', '>= 3.0.5'
+  gem 'html-proofer'
 end
