@@ -271,7 +271,7 @@ Sheila Rabun, IIIF Community and Communications Officer
 [synaptica]: http://www.synaptica.com/
 [zegami]: https://zegami.com/
 [4science]: http://www.4science.it/en/iiif-image-viewer/
-[search]: /api/search/
+[search]:{{ page.webprefix }}/api/search/
 [iiif-faq]: /community/faq/
 [museums-sched]: https://2017iiifconferencethevatican.sched.com/overview/type/Museums
 [comm-call]: /community/call/

@@ -148,7 +148,7 @@ Rashmi Singhal (Harvard)
 [iiif-av]: /community/groups/av/
 [disc-overview]: https://docs.google.com/document/d/1sqn61RAYH2fyc2Bh_ERzT8fA-_HwUDio6O1tSpicfyc/edit?usp=sharing
 [disc-technical]: https://docs.google.com/document/d/16_n_CCY9cuIPC_tAdkA-WbsKJpugZKk5GeEajpXA0CQ/edit?usp=sharing
-[iiif-auth]: /api/auth/1.0/
+[iiif-auth]:{{ page.webprefix }}/api/auth/1.0/
 [iiif-calendar]: /community/groups/
 [manuscripts]: /community/groups/manuscripts/
 [museums]: /community/groups/museums/
@@ -204,6 +204,6 @@ Rashmi Singhal (Harvard)
 [eLife-anno]: https://elifesciences.org/elife-news/elife-partners-with-hypothes.is-to-advance-open-scholarly-annotation
 [bbmn]: http://demos.biblissima-condorcet.fr/bbmn-1713/mirador/
 [edinburgh]: /event/2017/edinburgh
-[iiif-design]: /api/annex/notes/design_patterns/
+[iiif-design]:{{ page.webprefix }}/api/annex/notes/design_patterns/
 [ycba]: http://collections.britishart.yale.edu/vufind/Record/1667701
 [frick]: http://digitalcollections.frick.org/digico/#/

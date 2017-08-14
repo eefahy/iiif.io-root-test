@@ -71,7 +71,7 @@ layout: spec
 [iiifc-faq]: /community/consortium/faq
 [iiif-c]: /community/consortium
 [community-list]: /community/
-[auth]: /api/auth/
+[auth]:{{ page.webprefix }}/api/auth/
 [av]: /community/groups/av/
 [iiif-events]: /event/
 [wadm]: https://www.w3.org/TR/2017/REC-annotation-model-20170223/

@@ -30,8 +30,8 @@ Sincerely and on behalf of the community,
   Simeon Warner
 
 [home-page]: http://iiif.io/
-[image-api]: /api/image/2.0/
-[prezi-api]: /api/presentation/2.0/
+[image-api]:{{ page.webprefix }}/api/image/2.0/
+[prezi-api]:{{ page.webprefix }}/api/presentation/2.0/
 [loris]: https://github.com/pulibrary/loris/
 [iipserver]: https://github.com/ruven/iipsrv
 [osd]: http://openseadragon.github.io/

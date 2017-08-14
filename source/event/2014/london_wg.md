@@ -98,5 +98,5 @@ All IIIF Events are covered by the [IIIF Code of Conduct][conduct]. IIIF is comm
 [conduct]: /event/conduct/
 [logistics]: #logistics
 [bl-cc]: http://www.bl.uk/conferencecentre/conference.html
-[image-api]: /api/image/2.0/
-[prezi-api]: /api/presentation/2.0/
+[image-api]:{{ page.webprefix }}/api/image/2.0/
+[prezi-api]:{{ page.webprefix }}/api/presentation/2.0/

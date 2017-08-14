@@ -63,5 +63,5 @@ All IIIF Events are covered by the [IIIF Code of Conduct][conduct]. IIIF is comm
 [event-brite]: https://www.eventbrite.com/e/sharing-images-of-global-culture-tickets-15546122872
 [conduct]: /event/conduct/
 [logistics]: #logistics
-[image-api]: /api/image/2.0/
-[prezi-api]: /api/presentation/2.0/
+[image-api]:{{ page.webprefix }}/api/image/2.0/
+[prezi-api]:{{ page.webprefix }}/api/presentation/2.0/
