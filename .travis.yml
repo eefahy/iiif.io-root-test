@@ -16,18 +16,7 @@ rvm:
   - "2.2.3"
 jdk:
   - oraclejdk8
-
-branches:
-  - 'master'
+dist: precise
 
 notifications:
-  email:
-    recipients:
-      - "azaroth42@gmail.com"
-      - "blalbrit@stanford.edu"
-      - "jpstroop@gmail.com"
-      - "michael.appleby@yale.edu"
-      - "simeon.warner@gmail.com"
-      - "snydman@stanford.edu"
-    on_success: "change"
-    on_failure: "change"
+  email: false
