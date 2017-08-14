@@ -20,4 +20,4 @@ Jon Stroop,
 Simeon Warner
 
 [auth10]:{{ page.webprefix }}/api/auth/1.0/ "Authentication API v1.0"
-[hague2016]: /event/2016/thehague/ "The Hague Working Group Meeting 2016"
+[hague2016]: {{ site.url }}{{ site.baseurl }}/event/2016/thehague/ "The Hague Working Group Meeting 2016"
