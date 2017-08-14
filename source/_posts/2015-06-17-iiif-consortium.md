@@ -8,7 +8,7 @@ layout: post
 
 __Global consortium forms to standardize and improve sharing and displaying of image-based scholarly resources on the web__
 
-<img src="/community/news/iiif-c/iiif-c-photo.jpg" width="800" alt="IIIF-C Members"/>
+<img src="{{ site.url }}{{ site.baseurl }}/community/news/iiif-c/iiif-c-photo.jpg" width="800" alt="IIIF-C Members"/>
 
 _Leaders from eleven research libraries, national libraries, and nonprofit image repositories met at Oxford University to form the International Image Interoperability Framework Consortium_
 
