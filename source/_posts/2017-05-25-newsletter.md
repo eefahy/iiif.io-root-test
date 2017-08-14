@@ -82,7 +82,7 @@ The Europeana IIIF Task Force is working to identify the current trends and tend
 ## Technical Work
 
 ### A/V Technical Specification Work
-The [IIIF A/V Technical Specification Group][iiif-av] has been modeling various A/V use cases using IIIF manifests and canvases. Wider discussions about ranges within manifests have informed modeling work for both IIIF A/V and other objects with complex hierarchies. Experiments are currently underway to implement the current [IIIF A/V model][av-fixtures], as the group looks to test the model and address [issues related to syncing multiple video and/or audio files in a single player][av-challenges]. The Avalon Media System team at Indiana University and Northwestern University has been working on a proof of concept for [audio][avalon-a] and [video][avalon-v] towards a [new release][avalon] that will include an audio and video player that works with IIIF manifests. The group is still seeking A/V material to experiment with, unencumbered by rights issues that would prevent reuse, and suitable for all audiences, such as:
+The [IIIF A/V Technical Specification Group][iiif-av] has been modeling various A/V use cases using IIIF manifests and canvases. Wider discussions about ranges within manifests have informed modeling work for both IIIF A/V and other objects with complex hierarchies. Experiments are currently underway to implement the current [IIIF A/V model][av-fixtures], as the group looks to test the model and address [issues related to syncing multiple video and/or audio files in a single player][av-challenges]. The Avalon Media System team at Indiana University and Northwestern University has been working on a proof of concept for audio and video towards a [new release][avalon] that will include an audio and video player that works with IIIF manifests. The group is still seeking A/V material to experiment with, unencumbered by rights issues that would prevent reuse, and suitable for all audiences, such as:
 
 * A variety of single formats in common use today (mp4, webm with common codecs)
 * MPEG-DASH and HLS file sets (no live streaming yet though)
@@ -209,9 +209,7 @@ Sheila Rabun, IIIF Community and Communications Officer
 [leeds]: https://www.leeds.ac.uk/ims/imc/imc2017.html
 [dams]: /news/2017/05/01/letter-to-dams/
 [av-challenges]: https://docs.google.com/document/d/1lcef8tjqfzBqRSmWLkJZ46Pj0pm8nSD11hbCAd7Hqxg/edit?usp=sharing
-[avalon]: https://wiki.dlib.indiana.edu/display/VarVideo/Avalon+7+Road+Map
-[avalon-a]: https://avalonmediasystem.github.io/avalon-poc-standalone/dist/audio.html
-[avalon-v]: https://avalonmediasystem.github.io/avalon-poc-standalone/dist/index.html
+[avalon]: https://wiki.dlib.indiana.edu/display/VarVideo/Avalon+7+Roadmap
 [iiif-stories]: https://github.com/IIIF/iiif-stories/issues
 [text-charter]: https://docs.google.com/document/d/1wTxgcj-AlAE3KwcxP59mTZhOOQKkDEaqwVK_NHOIRvc/edit
 [text-poll]: http://doodle.com/poll/b92ste87ri7x5ekh

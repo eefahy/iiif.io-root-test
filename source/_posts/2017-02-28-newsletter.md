@@ -171,7 +171,7 @@ Rashmi Singhal (Harvard)
 [dplafest]: https://dp.la/info/get-involved/dplafest/april-2017/
 [taskforce]: http://pro.europeana.eu/taskforce/iiif
 [taskforce-more]: http://pro.europeana.eu/page/issue-6-iiif
-[smithsonian]: https://dpo.si.edu/2017-smithsonian-digitization-fair-welcome
+[smithsonian]: https://dpo.si.edu/2017-smithsonian-digitization-fair-welcome-0
 [iiif-discovery]: /community/groups/discovery
 [av-gist]: https://docs.google.com/document/d/1X7b7zQGDsiEvAfvb1WboDXe360mz7Zmm0o0LT43nozk/edit?usp=sharing
 [av-fixtures]: https://github.com/IIIF/iiif-av/tree/master/source/api/av/examples
@@ -201,7 +201,7 @@ Rashmi Singhal (Harvard)
 [bodleian-buttons]: http://digital.bodleian.ox.ac.uk/inquire/Discover/Search/#/?p=c+,t+,rsrs+0,rsps+10,fa+ox%3Acollection%5EEphemera,so+ox%3Asort%5Easc,scids+,pid+,vi+
 [4science]: http://www.4science.it/en/iiif-image-viewer/
 [eLife]: https://elifesciences.org/elife-news/international-image-interoperability-framework-iiif-science-publishers
-[eLife-anno]: https://elifesciences.org/elife-news/elife-partners-with-hypothes.is-to-advance-open-scholarly-annotation
+[eLife-anno]: https://via.hypothes.is/http:/www.nature.com/news/annotating-the-scholarly-web-1.18900
 [bbmn]: http://demos.biblissima-condorcet.fr/bbmn-1713/mirador/
 [edinburgh]: /event/2017/edinburgh
 [iiif-design]:{{ page.webprefix }}/api/annex/notes/design_patterns/
