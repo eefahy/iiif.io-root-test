@@ -15,12 +15,12 @@ The following is a list of active IIIF community groups and technical specificat
   * [Software Developers Community Group][software]
   * [Text Granularity Technical Specification Group][text-granularity]
 
-[av]: av "IIIF A/V Technical Specification Group"
-[manuscripts]: manuscripts "IIIF Manuscripts Community Group"
-[museums]: museums "IIIF Museums Community Group"
-[newspapers]: newspapers "IIIF Newspapers Community Group"
-[software]: software "Software Developers Community Group"
-[discovery]: discovery "IIIF Discovery Technical Specification Group"
+[av]: {{ site.url }}{{ site.baseurl }}/community/groups/av "IIIF A/V Technical Specification Group"
+[manuscripts]: {{ site.url }}{{ site.baseurl }}/community/groups/manuscripts "IIIF Manuscripts Community Group"
+[museums]: {{ site.url }}{{ site.baseurl }}/community/groups/museums "IIIF Museums Community Group"
+[newspapers]: {{ site.url }}{{ site.baseurl }}/community/groups/newspapers "IIIF Newspapers Community Group"
+[software]: {{ site.url }}{{ site.baseurl }}/community/groups/software "Software Developers Community Group"
+[discovery]: {{ site.url }}{{ site.baseurl }}/community/groups/discovery "IIIF Discovery Technical Specification Group"
 [groups-framework]: {{ site.url }}{{ site.baseurl }}/community/groups/framework
 [text-granularity]: {{ site.url }}{{ site.baseurl }}/community/groups/text-granularity/
 
