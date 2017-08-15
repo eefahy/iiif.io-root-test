@@ -20,5 +20,39 @@ cache:
   directories:
   - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 
+before_deploy: if [[ ${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH} != master ]]; then
+  bundle exec jekyll build --baseurl /${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH};
+  fi
+
+deploy:
+  - provider: s3
+    access_key_id:
+      secure: CywKj2zHq2LdODzlQ+bcBEhsKSCZS2twoWTAxP3dn2r5sm4zitjBJ07EmO/wqyw6HjlhAMdYV5LHIWKry+ytFT5QSFtC58jwNkZa9xj0NYleDcerePJOA5m6PfKoCePYcKYfovYv0LwRfHDjUcnPSq5L5syx+hzngbwF4NCJ0KeCE+v3BDiZrYvzuciDgfNEnmu/IYDgneBEcAhXTY4afVjsm0KI0OqIJ4rWp98u8eWCrsly/EXO1+tOU/Cesf8HyB5/bO+VAMd0GG3CtYKfPYkBSgcTmFru4OOsVIXx6eSQxfEcPRYNBYN3VxlauMnKhbssD5rrrNJafbmM7NQMQlFpp8LdzRuys4Lf5qOPXxHoTDjLLqDN9v4pCtV2GP0BX4LfOexy+DcAQe2FQv3BTgYNBmf6CHfzM01jZ9uHxdGvMZRxhD97jsmd7R4Cce3o96miOKQVbZZurjku1BP/vN3yX6ZEa2j7Yr+WnWCriemiN+47yCZQxriukhmrZVRqWCReU6iPcND7ovlKdciqT9Nf4MjM5D5rt8laIT1pC7fkGR1jSjJR5t8lkEv/D7lVXZsVpNuUZ1ennNnNav/RcA6UXt172DgKO4QuzYpaR9VQcl7AFU5xtF9u3Q6aflTUBu3UvxM4bQG+ZZliB6jMCW6HiuaZhsqVc2SIlcVveZU=
+    secret_access_key:
+      secure: Nu7H6aQ46yYwjvG/uFXkBFlsx79sNwMrjfQs7s2vcQKFq93RMo+hk61XOxGsox7BE/RWZlm1x7itPgb3j6hgtStTRzYb+aO3AugWf/wxTnUy2ZfCeDwCE0CQLRCdbVa3y1StClp8m4PRddpALjEsyGWkRkWDB+vTxWSAaBMRKmmzKRixA5nbhcwZq/mjy2SDQ21gBhSbZDj6czHz9NAsj89b3U0JL8AoKXnE4HtNlO491hA61W2FUFmnSJmLLmksLWiyC6TzGW8uR50Cj1nq32+82xjq4nUX4Uf300Ykkyz405AdnvnLZz+uz3ZBGjXiYXKsa1AnzRW/raBZ8KUjFY4peXrDj0ZgLHYa/8GI/KGNSyMx9M1GtUxMW5w/7HXoXBcIvfeC9wMLvKWH9tVVizpn+omP0lbz1AGph/oKG7rALU6hSJHcxmrBGkVahwZqkm+/znJgdiQxmMnOgYxUjlMYGYbBwWXQ9rzSXAx35k4DU1CsnokDZUvsWjw33xXT3I6W/GGmsjrSde1Y6ivXrkvHYqUIuqV18zAlSN9MXOgu0Rgm5ivvB9Zm7cKZW1Z8TFUIM9R3gnqpV/ExMwgYgDVGVP/90+Cmxr0Gcn5flVMwnztymt5lSDv7ZyuvnXAHwJGXiuziWxzbyf2cvMv2ZLiY8JdkwQzCDfL2dN2Vj84=
+    bucket: root-website
+    skip_cleanup: true
+    acl: public_read
+    region: us-east-1
+    local_dir: _site
+    on:
+      branch: master
+  - provider: s3
+    access_key_id:
+      secure: CywKj2zHq2LdODzlQ+bcBEhsKSCZS2twoWTAxP3dn2r5sm4zitjBJ07EmO/wqyw6HjlhAMdYV5LHIWKry+ytFT5QSFtC58jwNkZa9xj0NYleDcerePJOA5m6PfKoCePYcKYfovYv0LwRfHDjUcnPSq5L5syx+hzngbwF4NCJ0KeCE+v3BDiZrYvzuciDgfNEnmu/IYDgneBEcAhXTY4afVjsm0KI0OqIJ4rWp98u8eWCrsly/EXO1+tOU/Cesf8HyB5/bO+VAMd0GG3CtYKfPYkBSgcTmFru4OOsVIXx6eSQxfEcPRYNBYN3VxlauMnKhbssD5rrrNJafbmM7NQMQlFpp8LdzRuys4Lf5qOPXxHoTDjLLqDN9v4pCtV2GP0BX4LfOexy+DcAQe2FQv3BTgYNBmf6CHfzM01jZ9uHxdGvMZRxhD97jsmd7R4Cce3o96miOKQVbZZurjku1BP/vN3yX6ZEa2j7Yr+WnWCriemiN+47yCZQxriukhmrZVRqWCReU6iPcND7ovlKdciqT9Nf4MjM5D5rt8laIT1pC7fkGR1jSjJR5t8lkEv/D7lVXZsVpNuUZ1ennNnNav/RcA6UXt172DgKO4QuzYpaR9VQcl7AFU5xtF9u3Q6aflTUBu3UvxM4bQG+ZZliB6jMCW6HiuaZhsqVc2SIlcVveZU=
+    secret_access_key:
+      secure: Nu7H6aQ46yYwjvG/uFXkBFlsx79sNwMrjfQs7s2vcQKFq93RMo+hk61XOxGsox7BE/RWZlm1x7itPgb3j6hgtStTRzYb+aO3AugWf/wxTnUy2ZfCeDwCE0CQLRCdbVa3y1StClp8m4PRddpALjEsyGWkRkWDB+vTxWSAaBMRKmmzKRixA5nbhcwZq/mjy2SDQ21gBhSbZDj6czHz9NAsj89b3U0JL8AoKXnE4HtNlO491hA61W2FUFmnSJmLLmksLWiyC6TzGW8uR50Cj1nq32+82xjq4nUX4Uf300Ykkyz405AdnvnLZz+uz3ZBGjXiYXKsa1AnzRW/raBZ8KUjFY4peXrDj0ZgLHYa/8GI/KGNSyMx9M1GtUxMW5w/7HXoXBcIvfeC9wMLvKWH9tVVizpn+omP0lbz1AGph/oKG7rALU6hSJHcxmrBGkVahwZqkm+/znJgdiQxmMnOgYxUjlMYGYbBwWXQ9rzSXAx35k4DU1CsnokDZUvsWjw33xXT3I6W/GGmsjrSde1Y6ivXrkvHYqUIuqV18zAlSN9MXOgu0Rgm5ivvB9Zm7cKZW1Z8TFUIM9R3gnqpV/ExMwgYgDVGVP/90+Cmxr0Gcn5flVMwnztymt5lSDv7ZyuvnXAHwJGXiuziWxzbyf2cvMv2ZLiY8JdkwQzCDfL2dN2Vj84=
+    bucket: preview-website
+    skip_cleanup: true
+    acl: public_read
+    region: us-east-1
+    local_dir: _site
+    upload-dir: "root/$TRAVIS_BRANCH"
+    on:
+      all_branches: true
+      condition: "$TRAVIS_BRANCH != master"
+    on:
+      branch: master
+
 notifications:
   email: false
