@@ -8,8 +8,6 @@ install:
   - bundle install
   - npm install grunt grunt-html --save-dev
 
-script: rake ci
-
 # environment
 language: ruby
 rvm:
