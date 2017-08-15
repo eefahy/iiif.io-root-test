@@ -23,7 +23,8 @@ end
 
 desc 'Check links and html without caching'
 task :check_html do
-  HTMLProofer.check_directory('./_site', check_html: true).run
+  HTMLProofer.check_directory('./_site', cache: { timeframe: '1w' },
+                                         check_html: true).run
 end
 
 desc 'Run the site locally on localhost:4000'

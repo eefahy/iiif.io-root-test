@@ -16,5 +16,9 @@ jdk:
   - oraclejdk8
 dist: precise
 
+cache:
+  directories:
+  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+
 notifications:
   email: false
