@@ -97,7 +97,7 @@ The session schedule is available through [sched][sched].
 {: .api-table .msched-table}
 
 
-[home-page]: {{ site.url }}{{ site.baseurl }}
+[home-page]: {{ page.webprefix }}
 [groups]: {{ site.url }}{{ site.baseurl }}/community/groups/
 [eventbrite]: https://iiif-wg-2016.eventbrite.com
 [conduct]: {{ site.url }}{{ site.baseurl }}/event/conduct/

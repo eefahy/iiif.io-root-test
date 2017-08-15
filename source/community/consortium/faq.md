@@ -71,7 +71,7 @@ layout: spec
 [iiifc-faq]: {{ site.url }}{{ site.baseurl }}/community/consortium/faq
 [iiif-c]: {{ site.url }}{{ site.baseurl }}/community/consortium
 [community-list]: {{ site.url }}{{ site.baseurl }}/community/
-[auth]:{{ page.webprefix }}/api/auth/
+[auth]: {{ page.webprefix }}/api/auth/
 [av]: {{ site.url }}{{ site.baseurl }}/community/groups/av/
 [iiif-events]: {{ site.url }}{{ site.baseurl }}/event/
 [wadm]: https://www.w3.org/TR/2017/REC-annotation-model-20170223/

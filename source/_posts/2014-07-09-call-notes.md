@@ -76,4 +76,4 @@ Actions
 
 [iiif-discuss]: mailto:iiif-discuss@googlegroups.com
 [news]: {{ site.url }}{{ site.baseurl }}/news/
-[image-changelog]:{{ page.webprefix }}/api/image/2.0/change-log/
+[image-changelog]: {{ page.webprefix }}/api/image/2.0/change-log/

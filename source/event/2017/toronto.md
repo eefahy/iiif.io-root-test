@@ -44,7 +44,7 @@ Two hotel blocks with discounted rates are available for October 10-14:
 
 The session schedule is coming soon.
 
-[home-page]: {{ site.url }}{{ site.baseurl }}
+[home-page]: {{ page.webprefix }}
 [groups]: {{ site.url }}{{ site.baseurl }}/community/groups/
 [conduct]: {{ site.url }}{{ site.baseurl }}/event/conduct/
 [UT]: https://onesearch.library.utoronto.ca/library-info/ROBARTS
