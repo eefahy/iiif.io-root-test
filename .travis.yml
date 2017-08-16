@@ -11,7 +11,7 @@ install:
 # environment
 language: ruby
 rvm:
-  - "2.2.3"
+  - 2.2.3
 jdk:
   - oraclejdk8
 dist: precise
@@ -21,7 +21,9 @@ cache:
   - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 
 before_deploy: if [[ ${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH} != master ]]; then
-  bundle exec jekyll build --baseurl /root/${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH};
+  bundle exec jekyll clean && bundle exec jekyll build --baseurl /root/${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH};
+  else
+  bundle exec jekyll clean && bundle exec jekyll build;
   fi
 
 deploy:
