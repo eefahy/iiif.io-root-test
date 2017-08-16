@@ -9,7 +9,7 @@ end
 
 def build_site
   jekyll 'clean'
-  jekyll 'build'
+  jekyll 'build -d _site/test --baseurl /test'
 end
 
 desc 'Run the Markdown specs and HTML Proofer'
