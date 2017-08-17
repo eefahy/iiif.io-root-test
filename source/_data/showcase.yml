@@ -20,7 +20,7 @@
     An open-source, web-based 'multi-up' viewer that supports zoom-pan-rotate
     functionality, ability to display/compare simple images, and images with
     annotations.
-  github_url: https://github.com/IIIF/mirador
+  github_url: https://github.com/ProjectMirador/mirador
   url: http://showcase.iiif.io/showcase/mirador-viewer.html
 
 - name: Universal Viewer
@@ -125,7 +125,7 @@
   - >
     IIIF components are used to serve and view dynamically created fractal images up to 1 billion pixels wide and 1 billion pixels high. Fractals exhibit patterns that repeat as you zoom in. A standard IIIF viewer and web server are used, together with a fractal generator that emulates the way tiles are created from JPEG2000 images.
   url: http://showcase.iiif.io/showcase/fractals.html
-  
+
 - name: SAT Taishōzō Image DB
   id: satdb
   type: site
